@@ -1,0 +1,61 @@
+<h2>Student Registration</h2>
+
+<form [formGroup]="studentForm" (ngSubmit)="onSubmit()">
+
+  <label>Name</label>
+  <input type="text" formControlName="name">
+
+  @if(studentForm.get('name')?.invalid && studentForm.get('name')?.touched){
+    <small style="color:red;">
+      Name is required
+    </small>
+  }
+
+  <br><br>
+
+  <label>Email</label>
+  <input type="email" formControlName="email">
+
+  @if(studentForm.get('email')?.errors?.['required'] && studentForm.get('email')?.touched){
+    <small style="color:red;">
+      Email is required
+    </small>
+  }
+
+  @if(studentForm.get('email')?.errors?.['email']){
+    <small style="color:red;">
+      Invalid Email
+    </small>
+  }
+
+  <br><br>
+
+  <label>Course</label>
+
+  <select formControlName="course">
+
+    <option value="">Select Course</option>
+
+    <option>Angular</option>
+
+    <option>Spring Boot</option>
+
+    <option>Java</option>
+
+    <option>Python</option>
+
+  </select>
+
+  @if(studentForm.get('course')?.invalid && studentForm.get('course')?.touched){
+    <small style="color:red;">
+      Please select a course
+    </small>
+  }
+
+  <br><br>
+
+  <button type="submit">
+    Register
+  </button>
+
+</form>

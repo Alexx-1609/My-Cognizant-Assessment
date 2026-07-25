@@ -1,0 +1,12 @@
+.course-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+h1{
+    text-align:center;
+    color:#1976d2;
+    margin:20px;
+}

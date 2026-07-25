@@ -1,0 +1,37 @@
+.course-card{
+    width:320px;
+    background:#ffffff;
+    border-radius:12px;
+    padding:20px;
+    margin:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.course-card:hover{
+    transform:translateY(-5px);
+}
+
+.course-card h2{
+    color:#1976d2;
+    margin-bottom:10px;
+}
+
+.course-card p{
+    margin:8px 0;
+}
+
+button{
+    width:100%;
+    margin-top:15px;
+    padding:10px;
+    border:none;
+    background:#1976d2;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#125aa5;
+}

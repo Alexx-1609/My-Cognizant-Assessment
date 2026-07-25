@@ -1,0 +1,50 @@
+<h1>Angular Directives Demo</h1>
+
+<h2>&#64;if Example</h2>
+
+@if(isLoggedIn){
+
+<p style="color:green">
+    Welcome User
+</p>
+
+} @else {
+
+<p style="color:red">
+    Please Login
+</p>
+
+}
+
+<hr>
+
+<h2>&#64;for Example</h2>
+
+@for(student of students; track student){
+
+<p>{{ student }}</p>
+
+}
+
+<hr>
+
+<h2>ngClass Example</h2>
+
+<p [ngClass]="{
+  'success': status==='success',
+  'danger': status==='error'
+}">
+  Status Message
+</p>
+
+<hr>
+
+<h2>ngStyle Example</h2>
+
+<p [ngStyle]="{
+  color:'blue',
+  fontSize:'20px',
+  fontWeight:'bold'
+}">
+  Angular is Awesome!
+</p>

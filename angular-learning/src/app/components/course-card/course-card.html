@@ -1,0 +1,17 @@
+<div class="course-card">
+
+    <h2>{{ course.name | course }}</h2>
+
+    <p><strong>Username:</strong> {{ course.username }}</p>
+
+    <p><strong>Email:</strong> {{ course.email }}</p>
+
+    <p><strong>Phone:</strong> {{ course.phone }}</p>
+
+    <p><strong>Website:</strong> {{ course.website }}</p>
+
+    <p><strong>Company:</strong> {{ course.company?.name }}</p>
+
+    <button>View Profile</button>
+
+</div>

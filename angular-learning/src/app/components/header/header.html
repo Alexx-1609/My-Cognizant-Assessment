@@ -1,0 +1,31 @@
+<header class="header">
+
+  <h1>Student Course Portal</h1>
+
+  <nav>
+
+    <a routerLink="/">Home</a>
+
+    <a routerLink="/courses">Courses</a>
+
+    <a routerLink="/profile">Profile</a>
+
+    <a routerLink="/student-form">Register</a>
+
+    <a routerLink="/pipes">Pipes</a>
+
+    <a routerLink="/directives">Directives</a>
+
+    @if(authService.isLoggedIn()){
+
+      <button (click)="logout()">Logout</button>
+
+    } @else {
+
+      <a routerLink="/login">Login</a>
+
+    }
+
+  </nav>
+
+</header>

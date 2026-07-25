@@ -1,0 +1,15 @@
+<h2>Student Directory</h2>
+
+<p>Total Students: {{ courses.length }}</p>
+
+<div class="course-container">
+
+  @for (course of courses; track course.id) {
+
+    <app-course-card
+      [course]="course">
+    </app-course-card>
+
+  }
+
+</div>
